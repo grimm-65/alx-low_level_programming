@@ -1,18 +1,18 @@
-#include "../main.h"
+#include "main.h"
 
 /**
- * main - check for the digit 0-9
- *
- * Return: Always 0 (Success)
-*/
-
-int main(void)
+ * _isdigit - checks if parameter is a number between 0 to 9.
+ * @c: input number.
+ * Return: 1 if is a number (0 to 9), 0 in other case.
+ */
+int _isdigit(int c)
 {
-	char c;
-
-	c = '0';
-	printf("%c: %d\n", c, _isdigit(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isdigit(c));
-	return (0);
+	if (c >= 48 && c <= 57)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
